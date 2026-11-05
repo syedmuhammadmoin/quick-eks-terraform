@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars and edit only if the defaults do not suit.
+# terraform.tfvars is gitignored.
+
+# region          = "eu-west-1"
+# cluster_name    = "quick-eks"
+# cluster_version = "1.35"
+# vpc_cidr        = "10.42.0.0/16"   # must be a /16; subnets are derived from it
+
+# node_instance_types = ["t3.medium", "t3a.medium", "t2.medium"]
+# node_desired_size   = 2
+# node_max_size       = 3
+
+# Strongly recommended: restrict the public API endpoint to your own IP.
+#   curl -s https://checkip.amazonaws.com
+# cluster_endpoint_public_access_cidrs = ["203.0.113.7/32"]
+
+# Set to false for a private-only endpoint (you'll need a bastion/VPN for kubectl).
+# cluster_endpoint_public_access = true
